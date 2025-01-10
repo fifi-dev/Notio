@@ -1,0 +1,112 @@
+/*Header*/
+
+.header-container {
+    height: 90rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.background-header {
+    background-image: url(/assets/img/Paris15.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 90%;
+    height: 30rem;
+}
+.slick-next:before, .slick-prev:before {
+    font-family: slick;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header-secondary-titles-container h3 {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.header-secondary-titles-container h4 {
+    font-size: 15px;
+}
+
+/*-- Expertise --*/
+
+.expertise-card:nth-child(odd){
+    padding-left: 10%;
+}
+
+.expertise-card:nth-child(even) {
+    flex-direction: row-reverse;
+    padding-right: 10%;
+}
+
+.expertise-card:nth-child(even) .img-expertise-card {
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+    margin-right: 10%;
+}
+
+.img-expertise-card {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+.expertise-card h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: var(--main-color);
+    font-family: "Paytone One", sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.expertise-card p {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 200;
+}
+
+/*-- CAROUSSEL --*/
+
+.carrousel-container p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+/*-- Conditions --*/
+
+.cards-block img{
+    height: 450px;
+}
+
+.cards-block h3 {
+    color: var(--main-color);
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+/*--A PROPOS --*/
+
+.button-about{
+    color: white;
+    background-color: var(--text-secondary);
+    padding: 10px;
+}
+
+.button-about:hover {
+    background-color: #fff;
+    /* Fond blanc */
+    color: var(--main-color);
+    /* Texte en couleur principale */
+    opacity: 1;
+    /* Opacité pleine */
+}
